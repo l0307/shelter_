@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../main/index.html">
     <link rel="stylesheet" href="../main/style/style.css">
     <link rel="stylesheet" href="../main/style/fonts.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <title>Document</title>
 </head>
 <body>
@@ -34,6 +39,11 @@
                 </nav>
             </div>
         </header>
+        <div class="nav__burger">
+            <span class="nav__burger-span"></span>
+            <span class="nav__burger-span"></span>
+            <span class="nav__burger-span"></span>
+        </div>
         <main>
         <section class="first__section">
             <div class="container">
@@ -48,7 +58,7 @@
             </div>
         </section>
     </div>
-    <div class="info__section">
+    <div class="info__section" data-aos="fade-right">
         <div class="container">
             <div class="is__block">
                 <img src="../../assets/img/about-pets.png" alt="">
@@ -60,7 +70,7 @@
             </div>
         </div>
     </div>
-    <div class="friends__section">
+    <div class="friends__section" data-aos="fade-up">
         <div class="container">
             <div class="fr__block">
                 <div class="upper">
@@ -146,7 +156,7 @@
             </div>
         </div>
     </div>
-    <section class="help__section">
+    <section class="help__section" data-aos="fade-up">
         <div class="container">
             <h2 class="title">How you can help <br> our shelter</h2>
             <div class="pictures">
@@ -189,7 +199,7 @@
             </div>
         </div>
     </section>
-    <section class="donation__section">
+    <section class="donation__section" data-aos="fade-right">
         <div class="container">
             <div class="ds__block">
             <img class="dog" src="../../assets/img/donation-dog.png" alt="">
@@ -208,7 +218,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer__block">
+            <div class="footer__block" data-aos="fade-up">
                 <div class="footer__block--bottom">
                     <h2 class="title">For questions <br> and suggestions</h2>
                     <div class="f_icons">
@@ -235,6 +245,12 @@
             </div>
         </div>
     </footer>
+    <script src="./style/main.js"></script>
     <script src="./style/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
+    
 </body>
 </html>
